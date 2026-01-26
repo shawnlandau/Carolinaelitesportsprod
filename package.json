@@ -1,0 +1,23 @@
+{
+  "name": "carolina-elite-sports",
+  "version": "1.0.0",
+  "description": "Carolina Elite Sports - Home of Carolina Rays. Professional baseball training facility website.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "baseball",
+    "sports",
+    "training",
+    "carolina",
+    "myrtle beach"
+  ],
+  "author": "Carolina Elite Sports",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "netlify-cli": "^15.0.0"
+  }
+}
