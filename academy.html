@@ -3,154 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carolina Elite Sports Academy - Comprehensive player development program.">
-    <title>Academy - Carolina Elite Sports</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Carolina Elite Sports Academy - Individual lessons, memberships, and training programs.">
+    <title>Carolina Elite Sports Academy | Training Programs</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/carolina-rays-logo.png" alt="Carolina Rays Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="logo-placeholder" style="display: none;">
-                        <h1>Carolina Elite Sports</h1>
-                    </div>
-                </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                        <li><a href="camps-tryouts.html">Camps/Tryouts</a></li>
-                        <li><a href="academy.html" class="active">Academy</a></li>
-                        <li><a href="alumni.html">Alumni</a></li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                    </ul>
-                </nav>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <a href="tel:843-286-8147"><i class="fas fa-phone"></i> (843) 286-8147</a>
+                <span class="separator">|</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri: 3PM-9PM</span>
+            </div>
+            <div class="login-links">
+                <a href="http://book.runswiftapp.com/facilities/the-facility-sports-lab" target="_blank" class="login-btn">Swift Login</a>
+                <a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" class="login-btn">eSoft Login</a>
             </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/rays-logo-placeholder.png" alt="Carolina Rays Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">CAROLINA ELITE SPORTS</span>
+                        <span class="logo-subtitle">Home of Carolina Rays</span>
+                    </div>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="camps.html">CAMPS/TRYOUTS</a></li>
+                <li><a href="academy.html" class="active">ACADEMY</a></li>
+                <li><a href="alumni.html">ALUMNI</a></li>
+                <li><a href="sponsors.html">SPONSORS</a></li>
+            </ul>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/carolinaelitesports/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/carolina_rays" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/carolinaelitesports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Page Header -->
     <section class="page-header">
+        <div class="page-header-overlay"></div>
         <div class="container">
             <h1>Carolina Elite Sports Academy</h1>
-            <p>Year-Round Player Development Program</p>
+            <p>Individualized training programs for serious athletes</p>
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- Academy Content -->
     <section class="content-section">
         <div class="container">
-            <div class="academy-intro">
-                <h2>About Our Academy</h2>
-                <p>The Carolina Elite Sports Academy is our comprehensive, year-round player development program designed to take athletes from foundational skills to elite performance. Our academy combines expert coaching, state-of-the-art facilities, and a proven curriculum to develop complete players.</p>
+            <div class="intro-text">
+                <h2>Academy Programs</h2>
+                <p>The Carolina Elite Sports Academy offers individualized training programs, private lessons, and membership packages designed to help players reach their full potential. Our experienced coaching staff provides personalized instruction tailored to each athlete's needs and goals.</p>
             </div>
 
-            <div class="program-overview">
-                <h2>Program Overview</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-alt"></i>
+            <!-- Academy Benefits -->
+            <div class="academy-benefits">
+                <h2>Academy Benefits & Features</h2>
+                <div class="benefits-highlight">
+                    <div class="benefit-box">
+                        <i class="fas fa-percent"></i>
+                        <h4>Discounted Lessons</h4>
+                        <p>Academy members receive special pricing on individual and group lessons</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fas fa-baseball-ball"></i>
+                        <h4>Ripken Facility Access</h4>
+                        <p>Access to the world-renowned Ripken Experience training facility</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h4>Complimentary Evaluations</h4>
+                        <p>Free initial evaluation and ongoing progress assessments</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fas fa-fire-alt"></i>
+                        <h4>Bullpen Work</h4>
+                        <p>Dedicated bullpen sessions for pitchers with professional coaching</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Offensive Skill Building</h4>
+                        <p>Comprehensive hitting and baserunning development programs</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fas fa-warehouse"></i>
+                        <h4>Batting Cage Access</h4>
+                        <p>Unlimited access to state-of-the-art batting cages during open hours</p>
+                    </div>
+                </div>
+
+                <div class="academy-hours">
+                    <h3><i class="fas fa-clock"></i> Academy Hours of Operation</h3>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <strong>Tuesday - Thursday</strong>
+                            <p>2:00 PM - 8:00 PM</p>
                         </div>
-                        <h3>Year-Round Training</h3>
-                        <p>Continuous development programs throughout the year to ensure consistent progress and skill advancement.</p>
+                        <div class="hours-item">
+                            <strong>Weekends</strong>
+                            <p>By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Programs -->
+            <div class="academy-programs">
+                <h2>Training Options</h2>
+                <div class="program-cards">
+                    <div class="program-card featured">
+                        <div class="card-ribbon">Popular</div>
+                        <h3>Individual Lessons</h3>
+                        <div class="program-price">Contact for Pricing</div>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> One-on-one instruction</li>
+                            <li><i class="fas fa-check"></i> Customized training plans</li>
+                            <li><i class="fas fa-check"></i> Position-specific coaching</li>
+                            <li><i class="fas fa-check"></i> Video analysis included</li>
+                            <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-primary">Schedule Lesson</a>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-user-friends"></i>
-                        </div>
-                        <h3>Small Group Sessions</h3>
-                        <p>Individualized attention in small group settings to maximize coaching effectiveness and player development.</p>
+                    <div class="program-card">
+                        <h3>Small Group Training</h3>
+                        <div class="program-price">Contact for Pricing</div>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> 2-4 players per group</li>
+                            <li><i class="fas fa-check"></i> Skill-specific sessions</li>
+                            <li><i class="fas fa-check"></i> Competitive environment</li>
+                            <li><i class="fas fa-check"></i> Cost-effective option</li>
+                            <li><i class="fas fa-check"></i> Multiple session packages</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-outline">Learn More</a>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="program-card">
+                        <h3>Facility Membership</h3>
+                        <div class="program-price">Contact for Pricing</div>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Unlimited facility access</li>
+                            <li><i class="fas fa-check"></i> Batting cage usage</li>
+                            <li><i class="fas fa-check"></i> Pitching area access</li>
+                            <li><i class="fas fa-check"></i> Training equipment</li>
+                            <li><i class="fas fa-check"></i> Monthly membership options</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-outline">Inquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialized Training -->
+            <div class="specialized-training">
+                <h2>Specialized Training Areas</h2>
+                <div class="training-grid">
+                    <div class="training-item">
+                        <div class="training-icon">
+                            <i class="fas fa-baseball-ball"></i>
+                        </div>
+                        <h4>Hitting Instruction</h4>
+                        <p>Mechanics, approach, bat speed development, and swing analysis using advanced video technology.</p>
+                    </div>
+
+                    <div class="training-item">
+                        <div class="training-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Pitching Development</h4>
+                        <p>Velocity training, command improvement, pitch development, and arm care programs.</p>
+                    </div>
+
+                    <div class="training-item">
+                        <div class="training-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Defensive Training</h4>
+                        <p>Position-specific skills, footwork, arm strength, and game situation practice.</p>
+                    </div>
+
+                    <div class="training-item">
+                        <div class="training-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h4>Speed & Agility</h4>
+                        <p>Base running techniques, first step quickness, and overall athletic development.</p>
+                    </div>
+
+                    <div class="training-item">
+                        <div class="training-icon">
                             <i class="fas fa-dumbbell"></i>
                         </div>
-                        <h3>Strength & Conditioning</h3>
-                        <p>Sport-specific training programs to build strength, speed, and athleticism for baseball performance.</p>
+                        <h4>Strength Training</h4>
+                        <p>Baseball-specific strength programs, power development, and injury prevention.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="training-item">
+                        <div class="training-icon">
                             <i class="fas fa-brain"></i>
                         </div>
-                        <h3>Mental Training</h3>
-                        <p>Developing the mental toughness and confidence needed to compete at the highest levels.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <h3>Video Analysis</h3>
-                        <p>Advanced video breakdown and analysis to identify areas for improvement and track progress.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <h3>Performance Tracking</h3>
-                        <p>Detailed metrics and progress tracking to measure development and set achievable goals.</p>
+                        <h4>Mental Performance</h4>
+                        <p>Focus, confidence building, pressure situations, and competitive mindset training.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="age-programs">
-                <h2>Age-Specific Programs</h2>
-                
-                <div class="program-card">
-                    <h3><i class="fas fa-child"></i> Youth Academy (Ages 6-12)</h3>
-                    <p>Building a strong foundation with emphasis on proper mechanics, fundamentals, and developing a love for the game.</p>
-                    <ul>
-                        <li>Fundamental skill development</li>
-                        <li>Age-appropriate training methods</li>
-                        <li>Character building and sportsmanship</li>
-                        <li>Introduction to competitive play</li>
-                    </ul>
-                </div>
+            <!-- Booking Information -->
+            <div class="booking-section">
+                <h2>Schedule Your Training</h2>
+                <div class="booking-grid">
+                    <div class="booking-option">
+                        <h3><i class="fas fa-laptop"></i> Online Booking</h3>
+                        <p>Use our convenient online booking system to schedule lessons and reserve facility time.</p>
+                        <a href="http://book.runswiftapp.com/facilities/the-facility-sports-lab" target="_blank" class="btn btn-primary">Book Online - Swift</a>
+                        <a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" class="btn btn-primary">Book Online - eSoft</a>
+                    </div>
 
-                <div class="program-card">
-                    <h3><i class="fas fa-user-graduate"></i> High School Academy (Ages 13-18)</h3>
-                    <p>Advanced training preparing players for high school competition and college recruitment opportunities.</p>
-                    <ul>
-                        <li>Advanced skill refinement</li>
-                        <li>Position-specific training</li>
-                        <li>College showcase preparation</li>
-                        <li>Recruiting guidance and support</li>
-                    </ul>
-                </div>
-
-                <div class="program-card">
-                    <h3><i class="fas fa-graduation-cap"></i> Post Graduate Academy</h3>
-                    <p>Elite program for post-graduate players pursuing professional baseball or college placement.</p>
-                    <ul>
-                        <li>Professional-level training</li>
-                        <li>Showcase and tryout preparation</li>
-                        <li>College placement assistance</li>
-                        <li>Professional scout exposure</li>
-                    </ul>
+                    <div class="booking-option">
+                        <h3><i class="fas fa-phone"></i> Call to Schedule</h3>
+                        <p>Speak directly with our staff to discuss your training goals and schedule a time that works for you.</p>
+                        <p class="booking-phone"><a href="tel:843-286-8147">(843) 286-8147</a></p>
+                        <p class="booking-hours">Monday - Friday: 3PM - 9PM<br>Saturday/Sunday: By Appointment</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="enrollment-section">
-                <h2>Enrollment Information</h2>
-                <p>Academy programs run year-round with flexible scheduling options to accommodate school and travel team commitments. Contact us to learn more about enrollment, schedules, and pricing.</p>
-                <div class="enrollment-cta">
-                    <a href="index.html#contact" class="btn btn-primary">Request Information</a>
-                    <a href="tel:8432868147" class="btn btn-secondary">Call: 843-286-8147</a>
+            <!-- CTA Section -->
+            <div class="academy-cta">
+                <h2>Ready to Take Your Game to the Next Level?</h2>
+                <p>Contact us today to discuss our academy programs and find the training option that's right for you.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary btn-large">Contact Us</a>
+                    <a href="tel:843-286-8147" class="btn btn-secondary btn-large">Call Now</a>
                 </div>
             </div>
         </div>
@@ -160,31 +266,50 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Visit Us</h3>
-                    <div class="facility">
-                        <h4>Indoor Facility</h4>
-                        <p>4770 Northgate Blvd<br>Myrtle Beach, SC 29577</p>
+                <div class="footer-col">
+                    <h4>Visit Us</h4>
+                    <div class="footer-facility">
+                        <p><strong>Indoor Facility</strong></p>
+                        <p>3265 Waccamaw Boulevard</p>
+                        <p>Myrtle Beach, SC 29579</p>
                     </div>
-                    <div class="facility">
-                        <h4>Ripken Experience Facility</h4>
-                        <p>3051 Ripken Way<br>Myrtle Beach, SC 29577</p>
+                    <div class="footer-facility">
+                        <p><strong>Ripken Experience Facility</strong></p>
+                        <p>3051 Ripken Way</p>
+                        <p>Myrtle Beach, SC 29577</p>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" rel="noopener">eSoft Login</a></li>
-                        <li><a href="index.html#contact">Youth/High School Form</a></li>
-                        <li><a href="index.html#contact">Post Graduate Form</a></li>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank">eSoft Login</a></li>
+                        <li><a href="camps.html">Youth/High School Form</a></li>
+                        <li><a href="camps.html">Post Graduate Form</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="staff.html">Staff</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Hours</h3>
+
+                <div class="footer-col">
+                    <h4>Hours</h4>
                     <p>Monday to Friday<br>3PM to 8PM</p>
-                    <p>Saturday/Sunday<br>By Appointment</p>
+                    <p>Saturday<br>By Appointment</p>
+                    <p>Sunday<br>By Appointment</p>
+                    <p class="footer-phone"><i class="fas fa-phone"></i> <a href="tel:843-286-8147">(843) 286-8147</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/carolinaelitesports/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/carolina_rays" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/carolinaelitesports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="footer-text">Building champions on and off the field</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2023 Carolina Elite Sports | All Rights Reserved</p>
             </div>

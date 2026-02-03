@@ -3,374 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet the experienced coaching staff at Carolina Elite Sports.">
-    <title>Staff - Carolina Elite Sports</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Meet the experienced coaching staff at Carolina Elite Sports committed to player development.">
+    <title>Our Staff | Carolina Elite Sports</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .bio-modal {
-            display: none;
-            position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.7);
-        }
-        .bio-modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 800px;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-        }
-        .bio-close {
-            color: #aaa;
-            position: absolute;
-            top: 1rem;
-            right: 1.5rem;
-            font-size: 2rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .bio-close:hover,
-        .bio-close:focus {
-            color: #000;
-        }
-        .bio-content h3 {
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
-        }
-        .bio-content h4 {
-            color: var(--secondary-blue);
-            margin-bottom: 1.5rem;
-        }
-        .bio-content ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-        .bio-content li {
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/carolina-rays-logo.png" alt="Carolina Rays Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="logo-placeholder" style="display: none;">
-                        <h1>Carolina Elite Sports</h1>
-                    </div>
-                </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="staff.html" class="active">Staff</a></li>
-                        <li><a href="camps-tryouts.html">Camps/Tryouts</a></li>
-                        <li><a href="academy.html">Academy</a></li>
-                        <li><a href="alumni.html">Alumni</a></li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                    </ul>
-                </nav>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <a href="tel:843-286-8147"><i class="fas fa-phone"></i> (843) 286-8147</a>
+                <span class="separator">|</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri: 3PM-9PM</span>
+            </div>
+            <div class="login-links">
+                <a href="http://book.runswiftapp.com/facilities/the-facility-sports-lab" target="_blank" class="login-btn">Swift Login</a>
+                <a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" class="login-btn">eSoft Login</a>
             </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/rays-logo-placeholder.png" alt="Carolina Rays Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">CAROLINA ELITE SPORTS</span>
+                        <span class="logo-subtitle">Home of Carolina Rays</span>
+                    </div>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="staff.html" class="active">STAFF</a></li>
+                <li><a href="camps.html">CAMPS/TRYOUTS</a></li>
+                <li><a href="academy.html">ACADEMY</a></li>
+                <li><a href="alumni.html">ALUMNI</a></li>
+                <li><a href="sponsors.html">SPONSORS</a></li>
+            </ul>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/carolinaelitesports/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/carolina_rays" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/carolinaelitesports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Page Header -->
     <section class="page-header">
+        <div class="page-header-overlay"></div>
         <div class="container">
             <h1>Our Coaching Staff</h1>
-            <p>Experienced Professionals Dedicated to Player Development</p>
+            <p>Experienced professionals dedicated to your success</p>
         </div>
     </section>
 
-    <!-- Staff Section -->
-    <section class="staff-section">
+    <!-- Staff Content -->
+    <section class="content-section">
         <div class="container">
-            <div class="staff-intro">
-                <p>Our coaching staff brings decades of combined experience in professional baseball, college coaching, and player development. Each coach is dedicated to helping players create their own opportunities and reach their full potential on and off the field.</p>
+            <div class="intro-text">
+                <h2>Meet Our Team</h2>
+                <p>Our coaching staff brings years of professional, collegiate, and high school baseball experience. Each coach is committed to player development and helping athletes reach their full potential on and off the field.</p>
             </div>
-            
+
             <div class="staff-grid">
-                <!-- Willie James -->
+                <!-- Willie James - Director -->
                 <div class="staff-card">
                     <div class="staff-image">
-                        <img src="images/staff-willie-james.jpg" alt="Willie James" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'300\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'20\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EWillie James%3C/text%3E%3C/svg%3E'">
+                        <img src="images/staff-willie-james.jpg" alt="Willie James">
+                        <div class="staff-overlay">
+                            <a href="#willie-bio" class="staff-email"><i class="fas fa-info-circle"></i></a>
+                        </div>
                     </div>
                     <div class="staff-info">
                         <h3>Willie James</h3>
                         <p class="staff-title">Director of Operations / Owner</p>
-                        <p class="staff-bio">8-year professional playing career with the Atlanta Braves organization and independent leagues. Dedicated to helping players create opportunities.</p>
-                        <button class="btn btn-secondary" onclick="openBio('willie-james')">Read Full Bio</button>
+                        <p class="staff-bio">8-year professional playing career with the Atlanta Braves organization. Attended Arizona Western Community College and Purdue University. Played for Rome Braves, Myrtle Beach Pelicans, and Mississippi Braves. Retired in 2009 and has coached in the Myrtle Beach area for 13+ years.</p>
+                        <button class="btn btn-outline btn-sm" onclick="openModal('willie-modal')">Read Full Bio</button>
                     </div>
                 </div>
 
-                <!-- Allen Cox -->
+                <!-- Allen Cox - Hitting Coach -->
                 <div class="staff-card">
                     <div class="staff-image">
-                        <img src="images/staff-allen-cox.jpg" alt="Allen Cox" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'300\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'20\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EAllen Cox%3C/text%3E%3C/svg%3E'">
+                        <img src="images/staff-allen-cox.jpg" alt="Allen Cox">
+                        <div class="staff-overlay">
+                            <a href="#allen-bio" class="staff-email"><i class="fas fa-info-circle"></i></a>
+                        </div>
                     </div>
                     <div class="staff-info">
                         <h3>Allen Cox</h3>
                         <p class="staff-title">Director of College Placement / Hitting Coach</p>
-                        <p class="staff-bio">25 years of coaching experience. One of North America's premier hitting coaches with extensive college and pro scouting background.</p>
-                        <button class="btn btn-secondary" onclick="openBio('allen-cox')">Read Full Bio</button>
+                        <p class="staff-bio">25 years of coaching experience. Regarded as one of the best hitting coaches in North America. Former hitting coach at Georgia Gwinnett College and head academy coach at Okotoks Dawgs in Canada. Scouted for the San Diego Padres and Milwaukee Brewers.</p>
+                        <button class="btn btn-outline btn-sm" onclick="openModal('allen-modal')">Read Full Bio</button>
                     </div>
                 </div>
 
-                <!-- Willie-Willie James -->
+                <!-- Willie-Willie James - Player Development -->
                 <div class="staff-card">
                     <div class="staff-image">
-                        <img src="images/staff-willie-willie.jpg" alt="Willie-Willie James" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'300\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'18\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EWillie-Willie James%3C/text%3E%3C/svg%3E'">
+                        <img src="images/staff-willie-willie.jpg" alt="Willie-Willie James">
+                        <div class="staff-overlay">
+                            <a href="#willie2-bio" class="staff-email"><i class="fas fa-info-circle"></i></a>
+                        </div>
                     </div>
                     <div class="staff-info">
                         <h3>Willie-Willie James</h3>
                         <p class="staff-title">Director of Player Development</p>
-                        <p class="staff-bio">Multi-sport athlete and coach with extensive experience across baseball, basketball, and football. International coaching experience in Italy.</p>
-                        <button class="btn btn-secondary" onclick="openBio('willie-willie')">Read Full Bio</button>
+                        <p class="staff-bio">Multi-sport athlete at Crenshaw High School. Played baseball and ran track at Los Angeles City College. Extensive coaching career spanning baseball, basketball, and football. California Inter Scholastic Coach of the Year (2003-2004). Founder of Love the Game Academy.</p>
+                        <button class="btn btn-outline btn-sm" onclick="openModal('willie2-modal')">Read Full Bio</button>
                     </div>
                 </div>
 
-                <!-- Michael Frazier -->
+                <!-- Enrique De Los Rios - Pitching Coach -->
                 <div class="staff-card">
                     <div class="staff-image">
-                        <img src="images/staff-michael-frazier.jpg" alt="Michael Frazier" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'300\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'18\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EMichael Frazier%3C/text%3E%3C/svg%3E'">
-                    </div>
-                    <div class="staff-info">
-                        <h3>Michael Frazier</h3>
-                        <p class="staff-title">Director of Athletic Performance</p>
-                        <p class="staff-bio">Specializing in strength, conditioning, and athletic performance development for baseball players.</p>
-                        <button class="btn btn-secondary" onclick="openBio('michael-frazier')">Read Full Bio</button>
-                    </div>
-                </div>
-
-                <!-- Enrique De Los Rios -->
-                <div class="staff-card">
-                    <div class="staff-image">
-                        <img src="images/staff-enrique-delosrios.jpg" alt="Enrique De Los Rios" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'300\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'16\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EEnrique De Los Rios%3C/text%3E%3C/svg%3E'">
+                        <img src="images/staff-enrique.jpg" alt="Enrique De Los Rios">
+                        <div class="staff-overlay">
+                            <a href="#enrique-bio" class="staff-email"><i class="fas fa-info-circle"></i></a>
+                        </div>
                     </div>
                     <div class="staff-info">
                         <h3>Enrique De Los Rios</h3>
                         <p class="staff-title">Director of Facility Operations / Pitching Coach</p>
-                        <p class="staff-bio">Professional pitcher from Venezuela with 7 years in the Chicago Cubs organization. Passionate about sharing his knowledge with the next generation.</p>
-                        <button class="btn btn-secondary" onclick="openBio('enrique-delosrios')">Read Full Bio</button>
+                        <p class="staff-bio">Professional pitcher from San Antonio de los Altos, Venezuela. Signed by the Chicago Cubs at age 17. Pitched in Cubs organization (2013-2019) and winter ball for Leones de Caracas. Represented Venezuela in World Baseball Championships (2012).</p>
+                        <button class="btn btn-outline btn-sm" onclick="openModal('enrique-modal')">Read Full Bio</button>
+                    </div>
+                </div>
+
+                <!-- Michael Frazier - Athletic Performance -->
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="images/staff-michael-frazier.jpg" alt="Michael Frazier">
+                        <div class="staff-overlay">
+                            <a href="#michael-bio" class="staff-email"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Michael Frazier</h3>
+                        <p class="staff-title">Director of Athletic Performance</p>
+                        <p class="staff-bio">Certified strength and conditioning specialist focused on baseball-specific athletic performance, injury prevention, and player longevity. Develops customized training programs for all age groups.</p>
                     </div>
                 </div>
             </div>
-            
+
+            <div class="coaching-philosophy">
+                <h2>Our Coaching Philosophy</h2>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <i class="fas fa-bullseye"></i>
+                        <h4>Player-Centered Approach</h4>
+                        <p>We focus on individual needs and goals, creating customized development plans for each athlete.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Continuous Learning</h4>
+                        <p>Our staff stays current with the latest training methodologies and technologies in baseball development.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>Character Development</h4>
+                        <p>We emphasize integrity, work ethic, and leadership skills that extend beyond the baseball field.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Team Environment</h4>
+                        <p>Building a supportive community where players push each other to reach new heights.</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="staff-cta">
-                <h2>Join Our Team</h2>
-                <p>Interested in coaching opportunities? Contact us to learn more.</p>
-                <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+                <h2>Work With Our Coaching Staff</h2>
+                <p>Whether you're looking for individual training, team development, or tournament preparation, our experienced coaching staff is here to help you succeed.</p>
+                <div class="cta-buttons">
+                    <a href="camps.html" class="btn btn-primary">View Training Programs</a>
+                    <a href="index.html#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Bio Modals -->
-    <!-- Willie James Bio -->
-    <div id="willie-james-modal" class="bio-modal">
-        <div class="bio-modal-content">
-            <span class="bio-close" onclick="closeBio('willie-james')">&times;</span>
-            <div class="bio-content">
-                <h3>Willie James</h3>
-                <h4>Director of Operations / Owner</h4>
-                
-                <h5>Professional Playing Career</h5>
-                <p>Willie James brings an impressive 8-year professional playing career to Carolina Elite Sports. His journey through professional baseball includes:</p>
-                <ul>
-                    <li><strong>Atlanta Braves Organization:</strong> Played for multiple affiliates including the Rome Braves, Myrtle Beach Pelicans, and Mississippi Braves</li>
-                    <li><strong>Independent Leagues:</strong> Continued professional career in independent baseball</li>
-                    <li><strong>College Baseball:</strong> Attended Arizona Western Community College and Purdue University</li>
-                </ul>
-                
-                <h5>Coaching Experience</h5>
-                <p>After retiring from professional baseball in 2009, Willie has dedicated the past 13+ years to coaching and developing players in the Myrtle Beach area. His coaching philosophy centers on helping players create their own opportunities in baseball.</p>
-                
-                <h5>Philosophy</h5>
-                <p><em>"Carolina Rays Organization is designed to develop and allow its players to create their own opportunities in the game of baseball and to allow each player an opportunity to pursue a dream of playing baseball at whatever level the player dreams of playing."</em></p>
-                
-                <p>Willie's firsthand experience navigating the professional baseball system, combined with his understanding of player development, makes him uniquely qualified to guide young athletes through their baseball journey.</p>
-            </div>
+    <!-- Staff Bio Modals -->
+    <div id="willie-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('willie-modal')">&times;</span>
+            <h2>Willie James</h2>
+            <h3>Director of Operations / Owner</h3>
+            <p><strong>Professional Playing Career:</strong> Willie James enjoyed an 8-year professional baseball career, primarily with the Atlanta Braves organization. He played for the Rome Braves, Myrtle Beach Pelicans, and Mississippi Braves, among other teams. He also competed in independent leagues throughout his career.</p>
+            <p><strong>College Baseball:</strong> Willie attended Arizona Western Community College and Purdue University, where he honed his skills and developed his love for the game.</p>
+            <p><strong>Coaching Philosophy:</strong> After retiring from professional play in 2009, Willie has dedicated over 13 years to coaching in the Myrtle Beach area. His vision for the Carolina Rays Organization is to develop players and allow them to create their own opportunities in baseball, enabling each athlete to pursue their dreams at whatever level they aspire to reach.</p>
+            <p><strong>Commitment to Development:</strong> Willie emphasizes that success comes from hard work, dedication, and creating opportunities. He is passionate about helping young athletes build the skills, confidence, and mindset necessary to compete at the highest levels.</p>
         </div>
     </div>
 
-    <!-- Allen Cox Bio -->
-    <div id="allen-cox-modal" class="bio-modal">
-        <div class="bio-modal-content">
-            <span class="bio-close" onclick="closeBio('allen-cox')">&times;</span>
-            <div class="bio-content">
-                <h3>Allen Cox</h3>
-                <h4>Director of College Placement / Hitting Coach</h4>
-                
-                <h5>Coaching Excellence</h5>
-                <p>With 25 years of coaching experience, Allen Cox is regarded as one of the best hitting coaches in North America. His expertise has helped countless players develop their offensive skills and reach the next level.</p>
-                
-                <h5>Collegiate Coaching</h5>
-                <ul>
-                    <li><strong>Georgia Gwinnett College:</strong> Former hitting coach</li>
-                    <li><strong>Okotoks Dawgs (Canada):</strong> Head academy coach</li>
-                    <li><strong>Kentucky Wesleyan:</strong> Coaching position</li>
-                </ul>
-                
-                <h5>High School Coaching</h5>
-                <ul>
-                    <li>Owensboro Catholic High School</li>
-                    <li>Las Plumas High School</li>
-                </ul>
-                
-                <h5>Professional Experience</h5>
-                <ul>
-                    <li><strong>San Diego Padres:</strong> Scout</li>
-                    <li><strong>Milwaukee Brewers:</strong> Scout</li>
-                </ul>
-                
-                <h5>Summer & Travel Baseball</h5>
-                <ul>
-                    <li>Regina Red Sox</li>
-                    <li>Owensboro Oilers</li>
-                    <li>Okotoks Dawgs</li>
-                    <li>Coastal Breeze</li>
-                    <li>Various academy teams</li>
-                </ul>
-                
-                <h5>Camps & Showcases</h5>
-                <p>Allen organizes and conducts numerous lesson packages, camps, and showcases including:</p>
-                <ul>
-                    <li>All American Talent Showcase</li>
-                    <li>Perfect Game events</li>
-                    <li>Tournament 12</li>
-                    <li>Additional showcase opportunities</li>
-                </ul>
-                
-                <p>His extensive network in college and professional baseball, combined with his proven hitting instruction methods, makes Allen an invaluable resource for players seeking to advance their careers.</p>
-            </div>
+    <div id="allen-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('allen-modal')">&times;</span>
+            <h2>Allen Cox</h2>
+            <h3>Director of College Placement / Hitting Coach</h3>
+            <p><strong>Coaching Experience:</strong> Allen Cox brings 25 years of coaching expertise and is widely regarded as one of the best hitting coaches in North America.</p>
+            <p><strong>College & Academy Roles:</strong></p>
+            <ul>
+                <li>Former Hitting Coach at Georgia Gwinnett College</li>
+                <li>Head Academy Coach at Okotoks Dawgs (Canada)</li>
+                <li>Coaching positions at Kentucky Wesleyan, Owensboro Catholic HS, Las Plumas HS</li>
+                <li>Coached with Regina Red Sox, Owensboro Oilers, Coastal Breeze, and various academy teams</li>
+            </ul>
+            <p><strong>Scouting Experience:</strong> Allen has worked as a professional scout for both the San Diego Padres and Milwaukee Brewers, giving him invaluable insight into what it takes to succeed at the next level.</p>
+            <p><strong>Showcases & Camps:</strong> Allen has run and coached at numerous prestigious showcases and camps including:</p>
+            <ul>
+                <li>All American Talent Showcase</li>
+                <li>Perfect Game events</li>
+                <li>Tournament 12</li>
+                <li>And many more regional and national showcases</li>
+            </ul>
+            <p><strong>Expertise:</strong> Known for his ability to break down swing mechanics, develop hitting approaches, and maximize offensive performance for players at all levels.</p>
         </div>
     </div>
 
-    <!-- Willie-Willie James Bio -->
-    <div id="willie-willie-modal" class="bio-modal">
-        <div class="bio-modal-content">
-            <span class="bio-close" onclick="closeBio('willie-willie')">&times;</span>
-            <div class="bio-content">
-                <h3>Willie-Willie James</h3>
-                <h4>Director of Player Development</h4>
-                
-                <h5>Athletic Background</h5>
-                <ul>
-                    <li><strong>Multi-Sport Athlete:</strong> Excelled in baseball and track at Crenshaw High School</li>
-                    <li><strong>College:</strong> Played baseball and ran track at Los Angeles City College</li>
-                </ul>
-                
-                <h5>Extensive Coaching Career</h5>
-                <p>Willie-Willie brings a unique perspective with his multi-sport coaching background spanning baseball, basketball, and football:</p>
-                
-                <h6>High School Coaching</h6>
-                <ul>
-                    <li><strong>Vista Del Lago High School</strong> (California) - Baseball, Basketball, Football</li>
-                    <li><strong>Valley View High School</strong> (California) - Baseball, Basketball, Football</li>
-                    <li><strong>Texas Christian High School</strong> - Multiple sports</li>
-                </ul>
-                
-                <h5>International Experience</h5>
-                <p><strong>Italian Baseball League (Ravenna, Italy):</strong> Served as Director of Player & Skills Development, bringing American coaching expertise to international competition.</p>
-                
-                <h5>Professional Baseball Experience</h5>
-                <ul>
-                    <li><strong>Professional Umpire:</strong> California League</li>
-                    <li><strong>Scout:</strong> Chicago White Sox</li>
-                    <li><strong>Scout:</strong> Texas Rangers</li>
-                </ul>
-                
-                <h5>Honors & Recognition</h5>
-                <ul>
-                    <li><strong>California Inter Scholastic Coach of the Year</strong> (2003-2004)</li>
-                    <li><strong>Founder:</strong> Love the Game Academy</li>
-                    <li>Numerous additional coaching accolades throughout career</li>
-                </ul>
-                
-                <h5>Personal</h5>
-                <p>Married with 4 children and 7 grandchildren. Willie-Willie's family-oriented approach and multi-generational perspective bring valuable wisdom to player development.</p>
-                
-                <p>His diverse background across multiple sports, combined with professional baseball scouting and umpiring experience, gives him a comprehensive understanding of athletic development and what it takes to succeed at the highest levels.</p>
-            </div>
+    <div id="willie2-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('willie2-modal')">&times;</span>
+            <h2>Willie-Willie James</h2>
+            <h3>Director of Player Development</h3>
+            <p><strong>Athletic Background:</strong> Willie-Willie was a multi-sport athlete at Crenshaw High School in Los Angeles, where he excelled in baseball and track & field. He continued his baseball and track career at Los Angeles City College.</p>
+            <p><strong>Extensive Coaching Career:</strong> Willie-Willie has coached baseball, basketball, and football at various levels:</p>
+            <ul>
+                <li>Vista Del Lago High School (California)</li>
+                <li>Valley View High School (California)</li>
+                <li>Texas Christian High School</li>
+            </ul>
+            <p><strong>International Experience:</strong> Served as Director of Player & Skills Development for the Italian Baseball League in Ravenna, Italy, bringing his expertise to players around the world.</p>
+            <p><strong>Professional Roles:</strong></p>
+            <ul>
+                <li>Professional umpire in the California League</li>
+                <li>Scout for the Chicago White Sox</li>
+                <li>Scout for the Texas Rangers</li>
+            </ul>
+            <p><strong>Awards & Recognition:</strong></p>
+            <ul>
+                <li>California Inter Scholastic Coach of the Year (2003-2004)</li>
+                <li>Founder of Love the Game Academy</li>
+                <li>Numerous coaching accolades throughout his career</li>
+            </ul>
+            <p><strong>Personal:</strong> Willie-Willie is married with 4 children and 7 grandchildren. His wealth of experience and multi-generational perspective enriches his approach to player development.</p>
         </div>
     </div>
 
-    <!-- Michael Frazier Bio -->
-    <div id="michael-frazier-modal" class="bio-modal">
-        <div class="bio-modal-content">
-            <span class="bio-close" onclick="closeBio('michael-frazier')">&times;</span>
-            <div class="bio-content">
-                <h3>Michael Frazier</h3>
-                <h4>Director of Athletic Performance</h4>
-                
-                <p>Michael Frazier leads our athletic performance and strength & conditioning programs at Carolina Elite Sports.</p>
-                
-                <h5>Areas of Expertise</h5>
-                <ul>
-                    <li>Baseball-specific strength training</li>
-                    <li>Speed and agility development</li>
-                    <li>Injury prevention protocols</li>
-                    <li>Athletic performance enhancement</li>
-                    <li>Conditioning programs for all age groups</li>
-                </ul>
-                
-                <p>Michael works with athletes to develop the physical foundation necessary for success in baseball, from youth players building fundamental strength to post-graduates preparing for the demands of college and professional baseball.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Enrique De Los Rios Bio -->
-    <div id="enrique-delosrios-modal" class="bio-modal">
-        <div class="bio-modal-content">
-            <span class="bio-close" onclick="closeBio('enrique-delosrios')">&times;</span>
-            <div class="bio-content">
-                <h3>Enrique De Los Rios</h3>
-                <h4>Director of Facility Operations / Pitching Coach</h4>
-                
-                <h5>Professional Background</h5>
-                <p><strong>Hometown:</strong> San Antonio de los Altos, Venezuela</p>
-                
-                <h5>Professional Playing Career</h5>
-                <ul>
-                    <li><strong>Chicago Cubs Organization (2013-2019):</strong> Signed at age 17, pitched for 7 seasons in the Cubs minor league system</li>
-                    <li><strong>Venezuelan Winter League:</strong> Played for Leones de Caracas</li>
-                    <li><strong>International Competition:</strong> Represented Venezuela in the World Baseball Championships (2012)</li>
-                </ul>
-                
-                <h5>Honors & Recognition</h5>
-                <ul>
-                    <li><strong>Top Athlete Award:</strong> Recognized in his hometown of San Antonio de los Altos (2018)</li>
-                </ul>
-                
-                <h5>Coaching Experience</h5>
-                <p>Since transitioning from professional play to coaching, Enrique has dedicated himself to developing the next generation of pitchers:</p>
-                <ul>
-                    <li><strong>Mt Vernon Patriots (12U):</strong> Guest instructor</li>
-                    <li><strong>Myrtle Beach High School:</strong> Assistant coach</li>
-                    <li><strong>Myrtle Beach High School JV:</strong> Current pitching coach</li>
-                    <li><strong>Carolina Elite Sports:</strong> Pitching coach and Director of Facility Operations</li>
-                </ul>
-                
-                <h5>Coaching Philosophy</h5>
-                <p>Enrique brings the knowledge and experience gained from 7 years of professional baseball to every coaching session. His passion is sharing the techniques, mental approach, and work ethic that allowed him to succeed at the professional level with Carolina Rays players.</p>
-                
-                <p>Having navigated the path from international prospect to professional pitcher, Enrique understands the dedication and development required at every level. He uses this firsthand experience to guide young pitchers toward their own dreams of playing at the highest levels.</p>
-            </div>
+    <div id="enrique-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('enrique-modal')">&times;</span>
+            <h2>Enrique De Los Rios</h2>
+            <h3>Director of Facility Operations / Pitching Coach</h3>
+            <p><strong>Professional Career:</strong> Enrique is a professional pitcher from San Antonio de los Altos, Venezuela. He was signed by the Chicago Cubs organization at just 17 years old and pitched in their minor league system from 2013-2019.</p>
+            <p><strong>Winter Ball Experience:</strong> Competed in Venezuelan Winter League baseball for Leones de Caracas, one of the most prestigious teams in Latin American baseball.</p>
+            <p><strong>International Competition:</strong> Represented Venezuela in the World Baseball Championships in 2012, showcasing his talents on the international stage.</p>
+            <p><strong>Recognition:</strong> Received the Top Athlete Award in his hometown of San Antonio de los Altos in 2018.</p>
+            <p><strong>Coaching Experience:</strong></p>
+            <ul>
+                <li>Guest instructor for Mt Vernon Patriots (12U team)</li>
+                <li>Assistant Coach at Myrtle Beach High School</li>
+                <li>Pitching Coach for Myrtle Beach High School JV team</li>
+            </ul>
+            <p><strong>Coaching Philosophy:</strong> Enrique is passionate about sharing his professional knowledge and experience with the Carolina Rays players. He specializes in pitching mechanics, velocity development, arm care, and mental preparation for pitchers at all levels.</p>
         </div>
     </div>
 
@@ -378,31 +287,50 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Visit Us</h3>
-                    <div class="facility">
-                        <h4>Indoor Facility</h4>
-                        <p>4770 Northgate Blvd<br>Myrtle Beach, SC 29577</p>
+                <div class="footer-col">
+                    <h4>Visit Us</h4>
+                    <div class="footer-facility">
+                        <p><strong>Indoor Facility</strong></p>
+                        <p>3265 Waccamaw Boulevard</p>
+                        <p>Myrtle Beach, SC 29579</p>
                     </div>
-                    <div class="facility">
-                        <h4>Ripken Experience Facility</h4>
-                        <p>3051 Ripken Way<br>Myrtle Beach, SC 29577</p>
+                    <div class="footer-facility">
+                        <p><strong>Ripken Experience Facility</strong></p>
+                        <p>3051 Ripken Way</p>
+                        <p>Myrtle Beach, SC 29577</p>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" rel="noopener">eSoft Login</a></li>
-                        <li><a href="index.html#contact">Youth/High School Form</a></li>
-                        <li><a href="index.html#contact">Post Graduate Form</a></li>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank">eSoft Login</a></li>
+                        <li><a href="camps.html">Youth/High School Form</a></li>
+                        <li><a href="camps.html">Post Graduate Form</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="staff.html">Staff</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Hours</h3>
+
+                <div class="footer-col">
+                    <h4>Hours</h4>
                     <p>Monday to Friday<br>3PM to 8PM</p>
-                    <p>Saturday/Sunday<br>By Appointment</p>
+                    <p>Saturday<br>By Appointment</p>
+                    <p>Sunday<br>By Appointment</p>
+                    <p class="footer-phone"><i class="fas fa-phone"></i> <a href="tel:843-286-8147">(843) 286-8147</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/carolinaelitesports/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/carolina_rays" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/carolinaelitesports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="footer-text">Building champions on and off the field</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2023 Carolina Elite Sports | All Rights Reserved</p>
             </div>
@@ -410,24 +338,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        function openBio(staffId) {
-            document.getElementById(staffId + '-modal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeBio(staffId) {
-            document.getElementById(staffId + '-modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            if (event.target.classList.contains('bio-modal')) {
-                event.target.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        }
-    </script>
 </body>
 </html>

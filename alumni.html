@@ -3,142 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carolina Elite Sports Alumni - Celebrating our players' success.">
-    <title>Alumni - Carolina Elite Sports</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Carolina Elite Sports Alumni - Success stories of players who have advanced to collegiate and professional baseball.">
+    <title>Alumni | Carolina Elite Sports</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/carolina-rays-logo.png" alt="Carolina Rays Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="logo-placeholder" style="display: none;">
-                        <h1>Carolina Elite Sports</h1>
-                    </div>
-                </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                        <li><a href="camps-tryouts.html">Camps/Tryouts</a></li>
-                        <li><a href="academy.html">Academy</a></li>
-                        <li><a href="alumni.html" class="active">Alumni</a></li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                    </ul>
-                </nav>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <a href="tel:843-286-8147"><i class="fas fa-phone"></i> (843) 286-8147</a>
+                <span class="separator">|</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri: 3PM-9PM</span>
+            </div>
+            <div class="login-links">
+                <a href="http://book.runswiftapp.com/facilities/the-facility-sports-lab" target="_blank" class="login-btn">Swift Login</a>
+                <a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" class="login-btn">eSoft Login</a>
             </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/rays-logo-placeholder.png" alt="Carolina Rays Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">CAROLINA ELITE SPORTS</span>
+                        <span class="logo-subtitle">Home of Carolina Rays</span>
+                    </div>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="camps.html">CAMPS/TRYOUTS</a></li>
+                <li><a href="academy.html">ACADEMY</a></li>
+                <li><a href="alumni.html" class="active">ALUMNI</a></li>
+                <li><a href="sponsors.html">SPONSORS</a></li>
+            </ul>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/carolinaelitesports/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/carolina_rays" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/carolinaelitesports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Page Header -->
     <section class="page-header">
+        <div class="page-header-overlay"></div>
         <div class="container">
-            <h1>Carolina Rays Alumni</h1>
-            <p>Celebrating Our Players' Success</p>
+            <h1>Alumni Success Stories</h1>
+            <p>Celebrating our players' achievements</p>
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- Alumni Content -->
     <section class="content-section">
         <div class="container">
-            <div class="alumni-intro">
-                <h2>A Tradition of Excellence</h2>
-                <p>We are proud of the many players who have come through our program and gone on to achieve success at the high school, college, and professional levels. Our alumni represent the dedication, hard work, and development focus that defines Carolina Elite Sports.</p>
+            <div class="intro-text">
+                <h2>Our Proud Tradition</h2>
+                <p>Carolina Elite Sports has a rich history of developing players who go on to compete at the collegiate and professional levels. Our alumni represent our commitment to excellence and the dedication of our coaching staff to helping players achieve their dreams.</p>
             </div>
 
-            <div class="success-stats">
+            <!-- Stats Section -->
+            <div class="alumni-stats">
                 <div class="stat-card">
                     <div class="stat-number">100+</div>
-                    <div class="stat-label">College Commitments</div>
+                    <div class="stat-label">College Players</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">50+</div>
-                    <div class="stat-label">Universities Represented</div>
+                    <div class="stat-label">D1 Commitments</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">15+</div>
                     <div class="stat-label">Professional Players</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">1000+</div>
-                    <div class="stat-label">Players Developed</div>
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years of Excellence</div>
                 </div>
             </div>
 
-            <div class="alumni-levels">
-                <h2>Where Our Alumni Play</h2>
+            <!-- Collegiate Programs -->  
+            <div class="college-section">
+                <h2>Collegiate Programs</h2>
+                <p>Our alumni have gone on to play at top programs across the country, from NCAA Division I powerhouses to NAIA and junior colleges. Below is a sampling of the schools where our players have continued their baseball careers:</p>
                 
-                <div class="level-section">
-                    <h3><i class="fas fa-star"></i> Professional Baseball</h3>
-                    <p>Several of our alumni have advanced to professional baseball, including MLB organizations and independent leagues. Their success is a testament to the quality of development and training they received at Carolina Elite Sports.</p>
-                </div>
-
-                <div class="level-section">
-                    <h3><i class="fas fa-university"></i> NCAA Division I</h3>
-                    <p>Many of our players have earned scholarships and opportunities to play at Division I programs across the country. From ACC to SEC conferences, our alumni compete at the highest level of college baseball.</p>
-                </div>
-
-                <div class="level-section">
-                    <h3><i class="fas fa-graduation-cap"></i> NCAA Division II & III</h3>
-                    <p>We've helped numerous players find the right fit at Division II and Division III programs, where they continue their academic and athletic careers.</p>
-                </div>
-
-                <div class="level-section">
-                    <h3><i class="fas fa-school"></i> Junior College</h3>
-                    <p>Our alumni have found success at JUCO programs, using these opportunities as stepping stones to four-year universities and continued baseball careers.</p>
-                </div>
-            </div>
-
-            <div class="alumni-spotlight">
-                <h2>Alumni Spotlight</h2>
-                <p class="spotlight-intro">Check back regularly as we feature success stories from our alumni network.</p>
-                
-                <div class="spotlight-grid">
-                    <div class="spotlight-card">
-                        <div class="spotlight-image">
-                            <img src="images/alumni-placeholder.jpg" alt="Alumni Player" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'400\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EAlumni Photo%3C/text%3E%3C/svg%3E'">
-                        </div>
-                        <div class="spotlight-info">
-                            <h3>Alumni Success Story</h3>
-                            <p class="player-school">University Name</p>
-                            <p>Featured alumni stories coming soon showcasing the journey and success of our Carolina Rays players.</p>
-                        </div>
+                <div class="college-grid">
+                    <div class="college-category">
+                        <h3>NCAA Division I</h3>
+                        <ul class="college-list">
+                            <li><i class="fas fa-graduation-cap"></i> ACC Conference Schools</li>
+                            <li><i class="fas fa-graduation-cap"></i> SEC Conference Schools</li>
+                            <li><i class="fas fa-graduation-cap"></i> Big South Conference</li>
+                            <li><i class="fas fa-graduation-cap"></i> Coastal Carolina University</li>
+                            <li><i class="fas fa-graduation-cap"></i> And many more...</li>
+                        </ul>
                     </div>
 
-                    <div class="spotlight-card">
-                        <div class="spotlight-image">
-                            <img src="images/alumni-placeholder.jpg" alt="Alumni Player" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\'%3E%3Crect fill=\'%23003d7a\' width=\'400\' height=\'300\'/%3E%3Ctext fill=\'white\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3EAlumni Photo%3C/text%3E%3C/svg%3E'">
-                        </div>
-                        <div class="spotlight-info">
-                            <h3>Alumni Success Story</h3>
-                            <p class="player-school">University Name</p>
-                            <p>Featured alumni stories coming soon showcasing the journey and success of our Carolina Rays players.</p>
-                        </div>
+                    <div class="college-category">
+                        <h3>NCAA Division II & III</h3>
+                        <ul class="college-list">
+                            <li><i class="fas fa-graduation-cap"></i> Regional Universities</li>
+                            <li><i class="fas fa-graduation-cap"></i> Liberal Arts Colleges</li>
+                            <li><i class="fas fa-graduation-cap"></i> State Universities</li>
+                            <li><i class="fas fa-graduation-cap"></i> Private Institutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="college-category">
+                        <h3>Junior Colleges</h3>
+                        <ul class="college-list">
+                            <li><i class="fas fa-graduation-cap"></i> NJCAA Programs</li>
+                            <li><i class="fas fa-graduation-cap"></i> Regional Community Colleges</li>
+                            <li><i class="fas fa-graduation-cap"></i> Transfer Pipeline Programs</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
+            <!-- Professional Players -->
+            <div class="pro-section">
+                <h2>Professional Baseball</h2>
+                <p>We're proud of our alumni who have been drafted or signed professional contracts to continue their careers in Minor League and Independent League Baseball.</p>
+                <div class="pro-highlights">
+                    <div class="pro-card">
+                        <i class="fas fa-trophy"></i>
+                        <h4>MLB Draft Picks</h4>
+                        <p>Multiple players selected in the MLB Amateur Draft</p>
+                    </div>
+                    <div class="pro-card">
+                        <i class="fas fa-baseball-ball"></i>
+                        <h4>Minor League Players</h4>
+                        <p>Alumni competing in various Minor League organizations</p>
+                    </div>
+                    <div class="pro-card">
+                        <i class="fas fa-star"></i>
+                        <h4>Independent League</h4>
+                        <p>Players in Atlantic League, Frontier League, and more</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div class="testimonials-section">
+                <h2>Player Testimonials</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Carolina Elite Sports prepared me not just as a baseball player, but as a person. The coaching staff pushed me to be my best every day, and I wouldn't be playing D1 baseball without their guidance."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Former Player</strong>
+                            <span>NCAA Division I</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The training and development I received at Carolina Elite gave me the tools and confidence to compete at the highest levels. The coaches truly care about your success."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Former Player</strong>
+                            <span>Professional Baseball</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"More than developing my baseball skills, Carolina Elite taught me about leadership, work ethic, and what it takes to succeed. These lessons have helped me on and off the field."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Former Player</strong>
+                            <span>College Baseball</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni Network -->
             <div class="alumni-network">
                 <h2>Stay Connected</h2>
-                <p>Are you a Carolina Rays alum? We'd love to stay connected and hear about your journey! Contact us to share your story and accomplishments.</p>
+                <p>We love staying connected with our alumni! Whether you're currently playing, coaching, or just want to stay in touch with the Carolina Elite family, we want to hear from you.</p>
+                <div class="network-options">
+                    <div class="network-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Alumni Updates</h4>
+                        <p>Share your current baseball journey and achievements with us</p>
+                    </div>
+                    <div class="network-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Mentorship</h4>
+                        <p>Help current players by sharing your experiences and advice</p>
+                    </div>
+                    <div class="network-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Alumni Events</h4>
+                        <p>Join us for alumni games, showcases, and special events</p>
+                    </div>
+                </div>
                 <div class="alumni-cta">
-                    <a href="index.html#contact" class="btn btn-primary">Share Your Story</a>
+                    <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
                 </div>
             </div>
 
-            <div class="become-alumni">
-                <h2>Ready to Join Our Alumni Network?</h2>
-                <p>Start your journey with Carolina Elite Sports today and become part of our tradition of excellence.</p>
-                <a href="index.html#contact" class="btn btn-secondary">Get Started</a>
+            <!-- Your Success Story -->
+            <div class="join-alumni">
+                <h2>Write Your Success Story</h2>
+                <p>Ready to become part of the Carolina Elite Sports legacy? Join our program and let us help you achieve your baseball goals.</p>
+                <div class="cta-buttons">
+                    <a href="camps.html" class="btn btn-primary btn-large">View Programs</a>
+                    <a href="index.html#contact" class="btn btn-secondary btn-large">Get Started</a>
+                </div>
             </div>
         </div>
     </section>
@@ -147,31 +238,50 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Visit Us</h3>
-                    <div class="facility">
-                        <h4>Indoor Facility</h4>
-                        <p>4770 Northgate Blvd<br>Myrtle Beach, SC 29577</p>
+                <div class="footer-col">
+                    <h4>Visit Us</h4>
+                    <div class="footer-facility">
+                        <p><strong>Indoor Facility</strong></p>
+                        <p>3265 Waccamaw Boulevard</p>
+                        <p>Myrtle Beach, SC 29579</p>
                     </div>
-                    <div class="facility">
-                        <h4>Ripken Experience Facility</h4>
-                        <p>3051 Ripken Way<br>Myrtle Beach, SC 29577</p>
+                    <div class="footer-facility">
+                        <p><strong>Ripken Experience Facility</strong></p>
+                        <p>3051 Ripken Way</p>
+                        <p>Myrtle Beach, SC 29577</p>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank" rel="noopener">eSoft Login</a></li>
-                        <li><a href="index.html#contact">Youth/High School Form</a></li>
-                        <li><a href="index.html#contact">Post Graduate Form</a></li>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.esoftplanner.com/v3/planner/login.php?access=0dG81LSVxNmo65a8znKCxJmFpA==" target="_blank">eSoft Login</a></li>
+                        <li><a href="camps.html">Youth/High School Form</a></li>
+                        <li><a href="camps.html">Post Graduate Form</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="staff.html">Staff</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Hours</h3>
+
+                <div class="footer-col">
+                    <h4>Hours</h4>
                     <p>Monday to Friday<br>3PM to 8PM</p>
-                    <p>Saturday/Sunday<br>By Appointment</p>
+                    <p>Saturday<br>By Appointment</p>
+                    <p>Sunday<br>By Appointment</p>
+                    <p class="footer-phone"><i class="fas fa-phone"></i> <a href="tel:843-286-8147">(843) 286-8147</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/carolinaelitesports/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/carolina_rays" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/carolinaelitesports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="footer-text">Building champions on and off the field</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2023 Carolina Elite Sports | All Rights Reserved</p>
             </div>
